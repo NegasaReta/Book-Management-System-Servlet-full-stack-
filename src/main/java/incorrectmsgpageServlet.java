@@ -4,11 +4,11 @@ import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
-@WebServlet("/about")
-public class aboutpageservlet extends HttpServlet {
+@WebServlet("/inco")
+public class incorrectmsgpageServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        RequestDispatcher rd = req.getRequestDispatcher("/WEB-INF/aboutpage.jsp");
+        RequestDispatcher rd = req.getRequestDispatcher("/index.html");
         rd.forward(req,resp);
     }
-    }
+}
